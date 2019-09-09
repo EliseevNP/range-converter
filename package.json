@@ -1,0 +1,33 @@
+{
+  "name": "range-converter",
+  "version": "1.0.0",
+  "description": "Simple range converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --exit test/*",
+    "lint": "eslint --fix --ignore-pattern './node_modules/*' .",
+    "coverage": "NODE_ENV=test nyc --reporter=text --reporter=html --check-coverage --lines 80 mocha --exit test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliseevNP/range-converter.git"
+  },
+  "keywords": [
+    "node.js",
+    "range",
+    "convert"
+  ],
+  "author": "Nikita Eliseev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EliseevNP/range-converter/issues"
+  },
+  "homepage": "https://github.com/EliseevNP/range-converter#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.3.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  }
+}
