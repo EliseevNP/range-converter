@@ -1,4 +1,4 @@
-async function convert(array) {
+module.exports = async (array) => {
   let result = '';
   if (array.length >= 3) {
     // take first element
@@ -21,11 +21,9 @@ async function convert(array) {
     array.push(last);
 
     // [1,*,3,5] => '1,*,3,5' => '1-3,5'
-    result = array.join().replace(/(,\*)+/g, "-").replace(/(-,)/g, "-");
+    result = array.join().replace(/(,\*)+/g, '-').replace(/(-,)/g, '-');
   } else {
     result = array.join();
   }
   return result;
-}
-
-module.exports = convert;
+};

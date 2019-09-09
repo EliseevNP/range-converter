@@ -1,5 +1,11 @@
 let config = {
+  parser: 'babel-eslint',
   extends: 'eslint:recommended',
+  'env': {
+    "es6": true,
+    'node': true,
+    browser: true
+  },
   rules: {
     'no-console': 'off',
     quotes: ['error', 'single', {'allowTemplateLiterals': true}],
@@ -7,16 +13,14 @@ let config = {
     'no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
     'no-undef': 'error'
   },
-  globals: {}
-}
-
-if (process.env.NODE_ENV === 'test') {
-  config.globals.describe = true;
-  config.globals.before = true;
-  config.globals.beforeEach = true;
-  config.globals.after = true;
-  config.globals.afterEach = true;
-  config.globals.it = true;
+  globals: {
+    describe: true,
+    before: true,
+    beforeEach: true,
+    after: true,
+    afterEach: true,
+    it: true
+  }
 }
 
 module.exports = config;

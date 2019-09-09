@@ -18,3 +18,14 @@ convert([1,3,4,5,6,7,8]).then((res) => {
 ```sh
 $ npm run test
 ```
+
+## Coverage
+```sh
+$ npm run coverage
+```
+Open in your browser file: './coverage/index.html'...
+
+## Check code style
+```sh
+$ npm run lint
+```
