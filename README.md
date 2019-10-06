@@ -1,12 +1,16 @@
-# Simple range converter
+# range-converter
 
-## Install
+Simple range converter
+
+## Installation
+
 ```sh
-npm install range-converter
+npm i range-converter
 ```
 
 ## Usage
-```
+
+```js
 const convert = require('range-converter');
 
 convert([1,3,4,5,6,7,8]).then((res) => {
@@ -15,17 +19,21 @@ convert([1,3,4,5,6,7,8]).then((res) => {
 ```
 
 ## Tests
+
 ```sh
 $ npm run test
 ```
 
 ## Coverage
+
 ```sh
 $ npm run coverage
 ```
+
 Open in your browser file: './coverage/index.html'...
 
 ## Check code style
+
 ```sh
 $ npm run lint
 ```
