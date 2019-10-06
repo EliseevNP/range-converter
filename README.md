@@ -37,3 +37,7 @@ Open in your browser file: './coverage/index.html'...
 ```sh
 $ npm run lint
 ```
+
+## License
+
+MIT.
