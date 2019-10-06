@@ -1,6 +1,6 @@
 {
   "name": "range-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple range converter",
   "main": "index.js",
   "scripts": {
